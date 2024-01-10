@@ -19,3 +19,13 @@ $('.up-btn').click(function () {
         $(`section:nth-child(${currentSection + 1})`).css("transform", "translateY(100%)").css("z-index", 100)
     }
 })
+
+
+$('.more-btn').click(function () {
+    $('.a3').css("transform", "translateX(-100%)")
+    $('.b3').css("transform", "translateX(0)")
+})
+$('.back-btn').click(function () {
+    $('.a3').css("transform", "translateX(0)")
+    $('.b3').css("transform", "translateX(100%)")
+})
