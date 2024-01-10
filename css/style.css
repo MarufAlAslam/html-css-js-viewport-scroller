@@ -134,6 +134,7 @@ section {
     transform: translateX(-65%);
     z-index: 1000;
     cursor: pointer;
+    display: none;
 }
 
 .down-btn {
