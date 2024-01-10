@@ -9,6 +9,24 @@ $('.down-btn').click(function () {
         $(`section:nth-child(${currentSection})`).css("transform", "translateY(0)").css("z-index", currentSection * 100)
     }
 
+    if (currentSection === 3) {
+        $('video').removeAttr("autoplay")
+        $('#video1').attr("autoplay", "true")
+    }
+    if (currentSection === 4) {
+        $('video').removeAttr("autoplay")
+        $('#video2').attr("autoplay", "true")
+    }
+    if (currentSection === 5) {
+        $('video').removeAttr("autoplay")
+        $('#video3').attr("autoplay", "true")
+    }
+    if (currentSection === 6) {
+        $('video').removeAttr("autoplay")
+        $('#video4').attr("autoplay", "true")
+    }
+
+
     if (currentSection == 6) {
         $('.down-btn').css('display', 'none')
     }
@@ -26,6 +44,11 @@ $('.up-btn').click(function () {
 
     if (currentSection === 2) {
         $('.up-btn').css('display', 'none')
+    }
+
+    if (currentSection === 3) {
+        $('video').removeAttr("autoplay")
+        $('#video1').attr("autoplay", "true")
     }
 
 })
