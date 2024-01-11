@@ -33,7 +33,7 @@ $('.down-btn').click(function () {
 })
 
 $('.up-btn').click(function () {
-
+    $('.down-btn').css('display', 'block')
     if (currentSection > 2) {
         $('.up-btn').css('display', 'block')
         currentSection--
